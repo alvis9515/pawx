@@ -1,0 +1,9 @@
+---
+- name: cambiar password
+  hosts: all
+  become: true
+  become_method: su
+  vars_files:
+    - passwords.yaml
+  roles:
+    - role: 'proyecto/roles/startservice'

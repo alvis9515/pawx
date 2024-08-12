@@ -1,0 +1,9 @@
+---
+- name: update SOs
+  hosts: all
+  become: true
+  roles:
+    - role: 'proyecto/roles/updateapt'
+    - role: 'proyecto/roles/updatednf'
+    - role: 'proyecto/roles/updateyum'
+    - role: 'proyecto/roles/updatezypper'
