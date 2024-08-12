@@ -5,4 +5,4 @@
   vars_files:
     - passwords.yaml
   roles:
-    - role: 'proyecto/roles/adduser' 
+    - role: 'roles/adduser' 
